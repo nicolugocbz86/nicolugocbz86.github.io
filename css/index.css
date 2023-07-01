@@ -17,9 +17,9 @@
 
             body {
                 width: 400px;
-                display: grid;
-                justify-content: center;
-                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
                 background-color: hsl(200, 100%, 50%);
             }
 
