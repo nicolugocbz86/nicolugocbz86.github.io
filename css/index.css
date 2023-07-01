@@ -14,7 +14,22 @@
     @media screen and (min-width: 0px) {
 
         /* TAGS */
+
+            body {
+                width: 400px;
+                display: grid;
+                justify-content: center;
+                justify-content: center;
+                background-color: hsl(200, 100%, 50%);
+            }
+
         /* CLASS */
+
+            .challenges_container a {
+                color: black;
+                text-decoration: none;
+            }
+
         /* ID */
 
     }
