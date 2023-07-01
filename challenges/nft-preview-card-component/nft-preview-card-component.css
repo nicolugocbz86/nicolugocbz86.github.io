@@ -108,11 +108,12 @@
                 gap: 1rem;
             }
 
-            .card-bottom h2 {
+            .card-bottom h1 {
+                font-size: 1.8rem;
                 color: hsl(0, 0%, 100%);
             }
 
-            .card-bottom h2:hover {
+            .card-bottom h1:hover {
                 color: hsl(178, 100%, 50%);
             }
 
