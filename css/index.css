@@ -23,12 +23,20 @@
                 background-color: hsl(200, 100%, 50%);
             }
 
-        /* CLASS */
-
-            .challenges_container a {
-                color: black;
+            a {
                 text-decoration: none;
             }
+
+            ul {
+                list-style-type: none;
+            }
+
+        /* CLASS */
+
+        .challenges_container a {
+            text-decoration: none;
+            color: black;
+        }
 
         /* ID */
 
