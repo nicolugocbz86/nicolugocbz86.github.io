@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&family=Poppins&display=swap');
+
+
+.color1 {background-color: hsl(0, 0%, 100%);}
+.color2 {background-color: hsl(30, 38%, 92%);}
+.color3 {background-color: hsl(158, 36%, 37%);}
+.color4 {background-color: hsl(212, 21%, 14%);}
+.color5 {background-color: hsl(228, 12%, 48%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+        body {
+            margin: auto;
+            width: 375px;
+            height: 667px;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: hsl(30, 38%, 92%);
+        }
+
+        body footer {
+            padding: .2rem;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        /* CLASS */
+
+        .card,
+        .card-bottom,
+        .card-bottom div:nth-of-type(4),
+        .card-bottom a {
+            display: flex;
+        }
+
+        .card,
+        .card-bottom {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 350px;
+            height: 630px;
+        }
+
+        .card-top {
+            height: 245px;
+            background-image: url(../images/image-product-mobile.jpg);
+            background-size: contain;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        .card-bottom {
+            background-color: hsl(0, 0%, 100%);
+            color: hsl(228, 12%, 48%);
+            border-radius: 0 0 1rem 1rem;
+            padding: 1rem;
+            gap: 1rem;
+        }
+
+        .card-bottom div:nth-child(1) {
+            text-transform: uppercase;
+            letter-spacing: .8rem;
+        }
+
+        .card-bottom div:nth-child(2) {
+            color: black;
+        }
+
+        .card-bottom div:nth-child(2) h1 {
+            font-family: 'Fraunces', sans-serif;
+        }
+
+        .card-bottom div:nth-child(3) {
+            width: 96%;
+            line-height: 1.6rem;
+        }
+
+        .card-bottom div:nth-of-type(4) {
+            gap: 1rem;
+        }
+
+        .card-bottom div:nth-of-type(4) p:first-child {
+            font-family: 'Fraunces', sans-serif;
+            font-size: 2rem;
+            color: hsl(158, 36%, 37%);
+        }
+
+        .card-bottom div:nth-of-type(4) p:last-child {
+            align-self: center;
+            text-decoration: line-through;
+        }
+
+        .card-bottom a {
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+            text-decoration: none;
+            background-color: hsl(158, 36%, 37%);
+            color: hsl(0, 0%, 100%);
+            border-radius: .6rem;
+            padding: 1rem;
+        }
+
+        .card-bottom a:hover {
+            background-color: hsl(212, 21%, 14%);
+        }
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            text-decoration: none;
+            color: hsl(158, 36%, 37%);
+        }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 1440px;
+                height: 800px;
+            }
+
+            .card {
+                width: 580px;
+                height: 435px;
+                flex-direction: row;
+            }
+
+            .card-top {
+                width: 50%;
+                height: 100%;
+                border-radius: 1rem 0 0 1rem;
+                background-image: url(../images/image-product-desktop.jpg);
+                background-size: contain;
+            }
+
+            .card-bottom {
+                width: 50%;
+                border-radius: 0 1rem 1rem 0;
+                padding: 1.8rem;
+            }
+
+        /* CLASS */
+        /* ID */
+
+    }
