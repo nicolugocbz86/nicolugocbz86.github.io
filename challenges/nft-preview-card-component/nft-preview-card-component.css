@@ -76,7 +76,7 @@
             .image_container {
                 height: 318px;
                 border-radius: .8rem;
-                background-image: url(../images/image-equilibrium.jpg);
+                background-image: url(image-equilibrium.jpg);
                 background-size: contain;
                 background-color: hsla(178, 100%, 50%, 0.4);
             }
