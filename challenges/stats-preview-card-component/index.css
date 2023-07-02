@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+.color1 {background-color: hsl(233, 47%, 7%);} /* main background */
+.color2 {background-color: hsl(244, 38%, 16%);} /* card background */
+.color3 {background-color: hsl(277, 64%, 61%);} /* accent */
+.color4 {background-color: hsl(0, 0%, 100%);} /* main heading, stats */
+.color5 {background-color: hsla(0, 0%, 100%, 0.75);} /* main paragraph */
+.color6 {background-color: hsla(0, 0%, 100%, 0.6);} /* stat headings */
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(277, 64%, 61%);
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 956px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+                font-family: 'Inter', sans-serif;
+                background-color: hsl(233, 47%, 7%);
+                color: hsl(0, 0%, 100%);
+            }
+
+            span {
+                color: hsl(277, 64%, 61%);
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-bottom,
+            .card-bottom-top,
+            .card-bottom-bottom,
+            .card-bottom-bottom div {
+                display: flex;
+            }
+
+            .card,
+            .card-bottom,
+            .card-bottom-top,
+            .card-bottom-bottom,
+            .card-bottom-bottom div {
+                flex-direction: column;
+            }
+
+            .card-top {
+                height: 275px;
+                background-image: url(../images/image-header-mobile.jpg);
+                background-size: contain;
+                background-color: hsl(277, 64%, 61%);
+                background-blend-mode: overlay;
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .card-bottom {
+                background-color: hsl(244, 38%, 16%);
+                border-radius: 0 0 1rem 1rem;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .card-bottom-top,
+            .card-bottom-bottom {
+                padding: .8rem;
+                gap: .8rem;
+            }
+
+            .card-bottom-top p {
+                margin: auto;
+                width: 85%;
+                line-height: 1.8rem;
+                color: hsla(0, 0%, 100%, 0.6);
+            }
+
+            .card-bottom-bottom {
+                font-family: 'Lexend Deca', sans-serif;
+            }
+
+            .card-bottom-bottom div {
+                padding: .6rem;
+                gap: .6rem;
+            }
+
+            .card-bottom-bottom div p:first-child {
+                font-size: 1.6rem;
+                font-weight: 700;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .card-bottom-bottom div p:last-child {
+                color: hsla(0, 0%, 100%, 0.6);
+                text-transform: uppercase;
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800;
+            }
+
+        /* CLASS */
+
+            .card {
+                width: 862px;
+                text-align: left;
+                flex-direction: row-reverse;
+            }
+
+            .card-top {
+                height: 356px;
+                width: 50%;
+                background-image: url(../images/image-header-desktop.jpg);
+                border-radius: 0 1rem 1rem 0;
+            }
+
+            .card-bottom {
+                height: 356px;
+                width: 50%;
+                border-radius: 1rem 0 0 1rem;
+            }
+
+            .card-bottom-top h1 {
+                width: 100%;
+            }
+
+            .card-bottom-top p {
+                width: 100%;
+                text-align: left;
+            }
+
+            .card-bottom-bottom {
+                flex-direction: row;
+                gap: 2rem;
+            }
+
+        /* ID */
+
+    }
