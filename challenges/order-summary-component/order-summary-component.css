@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.color1 {background-color: hsl(225, 100%, 98%);}
+.color2 {background-color: hsl(225, 100%, 94%);}
+.color3 {background-color: hsl(224, 23%, 55%);}
+.color4 {background-color: hsl(223, 47%, 23%);}
+.color5 {background-color: hsl(245, 75%, 52%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Red Hat Display', sans-serif;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .attribution {
+        font-size: 11px; text-align: center;
+    }
+
+    .attribution a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 709px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+                background-color: hsl(225, 100%, 94%);
+                background-image: url(../images/pattern-background-mobile.svg);
+                background-size: cover;
+            }
+
+            footer {
+                color: black;
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-bottom,
+            .card-bottom-middle-div,
+            .card-bottom-middle-div div:first-child,
+            .card-bottom-middle-div div:first-child div,
+            .card-bottom-bottom-div {
+                display: flex;
+            }
+
+            .card,
+            .card-bottom,
+            .card-bottom-bottom-div,
+            .card-bottom-middle-div div:first-child div {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 350px;
+            }
+
+            .card img {
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .card-bottom {
+                padding: 1rem;
+                gap: 1.6rem;
+                border-radius: 0 0 1rem 1rem;
+                background-color: hsl(225, 100%, 98%);
+                color: hsl(224, 23%, 55%);
+            }
+
+            .card-bottom h1 {
+                font-size: 1.5rem;
+                font-weight: 900;
+                color: hsl(223, 47%, 23%);
+            }
+
+            .card-bottom-p {
+                margin: auto;
+                line-height: 1.8rem;
+                width: 85%;
+            }
+
+            .card-bottom-middle-div {
+                justify-content: space-evenly;
+            }
+
+            .card-bottom-middle-div a {
+                align-self: center;
+                font-weight: 700;
+            }
+
+            .card-bottom-middle-div a:hover {
+                color: hsl(228, 45%, 44%);
+            }
+
+            .card-bottom-middle-div div:first-child {
+                gap: 1rem;
+            }
+
+            .p-container {
+                justify-content: space-around;
+            }
+
+            .p-container p {
+                width: 100%;
+            }
+
+            .p-container p:first-child {
+                font-weight: 900;
+                color: hsl(223, 47%, 23%);
+            }
+
+            .card-bottom-bottom-div {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .card-bottom-bottom-div a {
+                padding: 1rem;
+                text-decoration: none;
+            }
+
+            .card-bottom-bottom-div a:first-child {
+                border-radius: 1rem;
+                font-weight: 900;
+                background-color: hsl(245, 75%, 52%);
+                color: hsl(225, 100%, 98%);
+            }
+
+            .card-bottom-bottom-div a:first-child:hover {
+                background-color: hsl(228, 45%, 44%);
+            }
+
+            .card-bottom-bottom-div a:last-child {
+                font-weight: 900;
+                background-color: hsl(225, 100%, 98%);
+                color: hsl(224, 23%, 55%);
+            }
+
+            .card-bottom-bottom-div a:last-child:hover {
+                color: hsl(223, 47%, 23%);
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 1440px;
+                height: 900px;
+                background-image: url(../images/pattern-background-desktop.svg);
+                background-size: contain;
+            }
+
+        /* CLASS */
+        /* ID */
+
+    }
