@@ -72,7 +72,7 @@
 
             .card-top {
                 height: 275px;
-                background-image: url(../images/image-header-mobile.jpg);
+                background-image: url(image-header-mobile.jpg);
                 background-size: contain;
                 background-color: hsl(277, 64%, 61%);
                 background-blend-mode: overlay;
@@ -143,7 +143,7 @@
             .card-top {
                 height: 356px;
                 width: 50%;
-                background-image: url(../images/image-header-desktop.jpg);
+                background-image: url(image-header-desktop.jpg);
                 border-radius: 0 1rem 1rem 0;
             }
 
