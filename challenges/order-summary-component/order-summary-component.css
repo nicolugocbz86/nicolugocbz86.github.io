@@ -46,6 +46,7 @@
                 background-color: hsl(225, 100%, 94%);
                 background-image: url(pattern-background-mobile.svg);
                 background-size: cover;
+                background-repeat: no-repeat;
             }
 
             footer {
