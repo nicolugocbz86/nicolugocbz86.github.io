@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.color1 {background-color: hsl(31, 77%, 52%);}
+.color2 {background-color: hsl(184, 100%, 22%);}
+.color3 {background-color: hsl(179, 100%, 13%);}
+.color4 {background-color: hsla(0, 0%, 100%, 0.75);} /* (paragraphs) */
+.color5 {background-color: hsl(0, 0%, 95%);} /* (background, headings, buttons) */
+
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+
+    p {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+
+    h2 {
+        color: hsl(0, 0%, 95%);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 1502px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                gap: 1rem;
+                background-color: hsl(0, 0%, 95%);
+            }
+
+        /* CLASS */
+
+            .card,
+            .card section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card {
+                width: 350px;
+            }
+
+            .card section {
+                padding: 2.6rem;
+                gap: 2.4rem;
+            }
+
+            .card img {
+                width: 4rem;
+            }
+
+            .card h2 {
+                font-size: 2.4rem;
+                text-transform: uppercase;
+            }
+
+            .card p {
+                width: 88%;
+                line-height: 1.8rem;
+            }
+
+            .card a {
+                width: 56%;
+                align-self: flex-start;
+                text-align: center;
+                font-family: 'Lexend Deca', sans-serif;
+                background-color: hsl(0, 0%, 95%);
+                border: .1rem solid hsl(0, 0%, 95%);
+                border-radius: 2rem;
+                padding: .8rem;
+            }
+
+            .card section:nth-child(1) {
+                border-radius: .6rem .6rem 0 0;
+                background-color: hsl(31, 77%, 52%);
+            }
+
+            .card section:nth-child(1) a {
+                color: hsl(31, 77%, 52%);
+            }
+
+            .card section:nth-child(1) a:active {
+                background-color: hsl(31, 77%, 52%);
+                color: hsl(0, 0%, 95%);
+            }
+
+            .card section:nth-child(2) {
+                background-color: hsl(184, 100%, 22%);
+            }
+
+            .card section:nth-child(2) a {
+                color: hsl(184, 100%, 22%);
+            }
+
+            .card section:nth-child(2) a:active {
+                background-color: hsl(184, 100%, 22%);
+                color: hsl(0, 0%, 95%);
+            }
+
+            .card section:nth-child(3) {
+                border-radius: 0 0 .6rem .6rem;
+                background-color: hsl(179, 100%, 13%);
+            }
+
+            .card section:nth-child(3) a {
+                color: hsl(179, 100%, 13%);
+            }
+
+            .card section:nth-child(3) a:active {
+                background-color: hsl(179, 100%, 13%);
+                color: hsl(0, 0%, 95%);
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+            }
+
+        /* CLASS */
+
+            .card {
+                margin: auto;
+                width: 65%;
+                flex-direction: row;
+            }
+
+            .card section {
+                padding: 2.4rem;
+            }
+
+            .card section:nth-child(1) {
+                border-radius: .6rem 0 0 .6rem;
+            }
+
+            .card section:nth-child(3) {
+                border-radius: 0 .6rem .6rem 0;
+            }
+
+        /* ID */
+
+    }
