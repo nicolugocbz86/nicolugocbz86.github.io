@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+.color {background-color: hsl(185, 75%, 39%);}
+.color {background-color: hsl(229, 23%, 23%);}
+.color {background-color: hsl(227, 10%, 46%);}
+.color {background-color: hsl(0, 0%, 59%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 667px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+                background-color: hsl(185, 75%, 39%);
+            }
+
+            span {
+                font-weight: 400;
+                color: hsl(227, 10%, 46%);
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-bottom,
+            .card-bottom-top,
+            .card-bottom-bottom,
+            .card-bottom-bottom div {
+                display: flex;
+            }
+
+            .card,
+            .card-bottom,
+            .card-bottom-top,
+            .card-bottom-bottom div {
+                flex-direction: column;
+            }
+
+            .card img {
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .card-bottom {
+                border-radius: 0 0 1rem 1rem;
+                background-color: hsl(0, 0%, 100%);
+            }
+
+            .card-bottom img {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 22.8rem;
+                margin: auto;
+                border: .3rem solid hsl(0, 0%, 100%);
+                border-radius: 100%;
+            }
+
+            .card-bottom-top {
+                padding: 3.8rem 1.8rem 1.4rem 1.8rem;
+                gap: .6rem;
+            }
+
+            .card-bottom-top h1 {
+                font-size: 18px;
+            }
+
+            .card-bottom-top p {
+                color: hsl(227, 10%, 46%);
+            }
+
+            .card-bottom-bottom {
+                border-top: .1rem solid hsl(0, 0%, 59%);
+                padding: 2rem;
+            }
+
+            .card-bottom-bottom div {
+                width: 40%;
+                gap: .2rem;
+            }
+
+            .card-bottom-bottom div p:first-child {
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            .card-bottom-bottom div p:last-child {
+                letter-spacing: .1rem;
+                font-size: .6rem;
+                color: hsl(227, 10%, 46%);
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 720px;
+            }
+
+        /* CLASS */
+
+        .card-bottom img {
+            bottom: 20rem;
+        }
+
+        /* ID */
+
+    }
