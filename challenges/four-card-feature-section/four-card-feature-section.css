@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+.color {background-color: hsl(0, 78%, 62%);}
+.color {background-color: hsl(180, 62%, 55%);}
+.color {background-color: hsl(34, 97%, 64%);}
+.color {background-color: hsl(212, 86%, 64%);}
+.color {background-color: hsl(234, 12%, 34%);}
+.color {background-color: hsl(229, 6%, 66%);}
+.color {background-color: hsl(0, 0%, 98%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 1360px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                gap: 1rem;
+                text-align: center;
+                font-size: 15px;
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-top,
+            .card-bottom,
+            .card-bottom div {
+                display: flex;
+            }
+
+            .card,
+            .card-top,
+            .card-bottom,
+            .card-bottom div {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 350px;
+                color: hsl(229, 6%, 66%);
+                gap: 5rem;
+            }
+
+            .card-top {
+                gap: .2rem;
+            }
+
+            .card-top h1,
+            .card-top span {
+                font-size: 1.6rem;
+            }
+
+            .card-top h1 {
+                font-weight: 200;
+            }
+
+            .card-top span {
+                color: hsl(234, 12%, 34%);
+                font-weight: 600;
+            }
+
+            .card-top p {
+                margin: auto;
+                width: 90%;
+            }
+
+            .card-bottom {
+                padding: 0;
+                gap: .8rem;
+            }
+
+            .card-bottom-cards {
+                height: 200px;
+                border-radius: .3rem;
+                text-align: left;
+                box-shadow: 0 .3rem .8rem .1rem hsl(229, 6%, 66%);
+                padding: 1.2rem;
+                gap: .6rem;
+            }
+
+            .card-bottom-cards h3 {
+                color: hsl(234, 12%, 34%);
+            }
+
+            .card-bottom-cards p {
+                width: 92%;
+            }
+
+            .card-bottom-cards img {
+                width: 14%;
+                align-self: self-end;
+            }
+
+        /* ID */
+
+            #center-column {
+                gap: .8rem;
+            }
+
+            #supervisor {
+                border-top: .3rem solid hsl(180, 62%, 55%);
+            }
+
+            #builder {
+                border-top: .3rem solid hsl(0, 78%, 62%)
+            }
+
+            #karma {
+                border-top: .3rem solid hsl(34, 97%, 64%)
+            }
+
+            #calculator {
+                border-top: .3rem solid hsl(228, 45%, 44%)
+            }
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 922px;
+            }
+
+        /* CLASS */
+
+            .card {
+                margin: auto;
+                width: 70%;
+            }
+
+            .card-top p {
+                width: 50%;
+            }
+
+            .card-bottom {
+                height: 413px;
+                flex-direction: row;
+            }
+
+            .columns {
+                width: 100%;
+            }
+
+        /* ID */
+
+            #left-column,
+            #right-column {
+                justify-content: center;
+            }
+
+
+    }
