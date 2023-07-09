@@ -64,7 +64,7 @@
             }
 
             .card {
-                background-image: url(bg-mobile.svg);
+                background-image: url(images/bg-mobile.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
             }
@@ -138,7 +138,7 @@
                 grid-template-areas:
                 'card-top card-middle'
                 'card-top card-bottom';
-                background-image: url(bg-desktop.svg);
+                background-image: url(images/bg-desktop.svg);
             }
 
             .card-middle {
