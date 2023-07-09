@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+.color {background-color: hsl(257, 40%, 49%);}
+.color {background-color: hsl(300, 69%, 71%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        text-decoration: none;
+        color: hsl(300, 69%, 71%);
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 750px;
+                height: 1600px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+                background-color: hsl(257, 40%, 49%);
+                color: hsl(0, 0%, 100%);
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-top,
+            .card-middle,
+            .card-bottom {
+                display: flex;
+            }
+
+            .card,
+            .card-top,
+            .card-middle {
+                flex-direction: column;
+            }
+
+            .card-top,
+            .card-middle,
+            .card-bottom {
+                margin: auto;
+                width: 80%;
+            }
+
+            .card {
+                background-image: url(../images/bg-mobile.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .card-top {
+                padding: 4rem 0 0 0;
+                gap: 8rem;
+            }
+
+            .card-top img:nth-child(1) {
+                width: 40%;
+            }
+
+            .card-middle {
+                padding: 7rem 0 0 0;
+                gap: 1.8rem;
+            }
+
+            .card-middle h1 {
+                margin: auto;
+                width: 72%;
+            }
+
+            .card-middle p {
+                margin: auto;
+                width: 70%;
+                line-height: 2rem;
+                font-size: 1.4rem;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .card-middle a {
+                margin: auto;
+                width: 40%; /* measures */
+                border-radius: 2rem;
+                padding: .8rem;
+                text-decoration: none;
+                background-color: hsl(0, 0%, 100%); /* colors */
+                box-shadow: 0 .1rem .5rem .1rem hsl(257, 40%, 25%);
+            }
+
+            .card-bottom {
+                padding: 4rem 0 0 0;
+                justify-content: center;
+                gap: 1.4rem;
+            }
+
+            .card-bottom a {
+                text-decoration: none;
+                font-size: 2rem;
+                color: hsl(0, 0%, 100%);
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+            }
+
+        /* CLASS */
+
+            .card {
+                display: grid;
+                grid-template-areas:
+                'card-top card-middle'
+                'card-top card-bottom';
+                background-image: url(../images/bg-desktop.svg);
+            }
+
+            .card-middle {
+                padding: 9rem 0 0 0;
+            }
+
+            .card-top img:last-child {
+                padding: 0 0 6rem 0;
+            }
+
+            .card-middle h1,
+            .card-middle p,
+            .card-middle a {
+                margin: 0;
+            }
+
+            .card-middle h1,
+            .card-middle p {
+                text-align: left;
+            }
+
+            .card-middle p {
+                width: 79%;
+                font-size: 1rem;
+            }
+
+        /* ID */
+
+            #card-top {
+                grid-area: card-top;
+            }
+
+            #card-middle {
+                grid-area: card-middle;
+            }
+
+            #card-bottom {
+                grid-area: card-bottom;
+            }
+
+    }
