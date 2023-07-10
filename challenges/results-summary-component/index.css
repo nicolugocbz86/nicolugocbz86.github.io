@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/* primary */
+.color {background-color: hsl(0, 100%, 67%);}
+.color {background-color: hsl(39, 100%, 56%);}
+.color {background-color: hsl(166, 100%, 37%);}
+.color {background-color: hsl(234, 85%, 45%);}
+/* gradients */
+.color {background-color: hsl(252, 100%, 67%);}
+.color {background-color: hsl(241, 81%, 54%);}
+.color {background-color: hsla(256, 72%, 46%, 1);}/* circle */
+.color {background-color: hsla(241, 72%, 46%, 0);}/* circle */
+/* neutral */
+.color {background-color: hsl(0, 0%, 100%);}
+.color {background-color: hsl(221, 100%, 96%);}
+.color {background-color: hsl(241, 100%, 89%);}
+.color {background-color: hsl(224, 30%, 27%);}
+
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 809px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-header,
+            .card-footer,
+            .results-container,
+            .results,
+            .results div:nth-of-type(1) {
+                display: flex;
+            }
+
+            .card,
+            .card-header,
+            .card-footer,
+            .results-container {
+                flex-direction: column;
+            }
+
+            .card {
+                margin: auto;
+            }
+
+            .card-header {
+                background: linear-gradient(hsl(252, 100%, 67%),
+                                            hsl(241, 81%, 54%));
+                color: hsl(241, 100%, 89%);
+                border-radius: 0 0 2rem 2rem;
+                padding: 1.8rem;
+                gap: 1.4rem;
+            }
+
+            .card-header div {
+                margin: auto;
+                width: 40%;
+                border-radius: 100%;
+                background: linear-gradient(hsla(256, 72%, 46%, 1),
+                                            hsla(241, 72%, 46%, 0));
+                padding: 1rem;
+            }
+
+            .card-header div p:nth-of-type(1) {
+                color: hsl(0, 0%, 100%);
+                font-size: 3.4rem;
+                font-weight: 700;
+            }
+
+            .card-header h1 {
+                color: hsl(0, 0%, 100%);
+            }
+
+            .card-header p:last-of-type {
+                margin: auto;
+                width: 90%;
+            }
+
+            .card-footer {
+                padding: 1.4rem;
+                gap: 1rem;
+            }
+
+            .card-footer h2 {
+                text-align: left;
+                color: hsl(224, 30%, 27%);
+            }
+
+            .card-footer a {
+                text-decoration: none;
+                font-weight: 700;
+                background-color: hsl(224, 30%, 27%);
+                color: hsl(0, 0%, 100%);
+                border-radius: 2rem;
+                padding: 1rem;
+            }
+
+            .card-footer a:active {
+                background: linear-gradient(hsl(252, 100%, 67%),
+                                            hsl(241, 81%, 54%));
+            }
+
+            .results-container {
+                gap: .8rem;
+            }
+
+            .results {
+                justify-content: space-between;
+                font-weight: 700;
+                border-radius: .6rem;
+                padding: 1rem;
+            }
+
+            .results div:nth-of-type(1) {
+                gap: .8rem;
+            }
+
+            .results div:nth-of-type(2) p {
+                color: hsl(241, 100%, 89%);
+            }
+
+            .results div:nth-of-type(2) p span {
+                color: hsl(224, 30%, 27%);
+            }
+
+        /* ID */
+
+            #reaction {
+                background-color: hsla(0, 100%, 67%, 0.1);
+            }
+
+            #reaction div:nth-of-type(1) {
+                color: hsl(0, 100%, 67%);
+            }
+
+            #memory {
+                background-color: hsla(39, 100%, 56%, 0.1);
+            }
+
+            #memory div:nth-of-type(1) {
+                color: hsl(39, 100%, 56%);
+            }
+
+            #verbal {
+                background-color: hsla(166, 100%, 37%, 0.1);
+            }
+
+            #verbal div:nth-of-type(1) {
+                color: hsl(166, 100%, 37%);
+            }
+
+            #visual {
+                background-color: hsla(234, 85%, 45%, 0.1);
+            }
+
+            #visual div:nth-of-type(1) {
+                color: hsl(234, 85%, 45%);
+            }
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 1080px;
+            }
+
+        /* CLASS */
+
+            .card {
+                flex-direction: row;
+                border-radius: 2rem;
+            }
+
+            .card {
+                width: 80%;
+                box-shadow: 0 0 1rem 1rem hsl(241, 100%, 89%);
+            }
+
+            .card-header,
+            .card-footer {
+                width: 50%;
+            }
+
+            .card-header {
+                border-radius: 2rem;
+            }
+
+            .card-header div {
+                width: 45%;
+            }
+
+        /* ID */
+
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(234, 85%, 45%);
+    }
