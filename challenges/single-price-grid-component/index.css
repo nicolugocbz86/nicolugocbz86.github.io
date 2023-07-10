@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+.color {background-color: hsl(179, 62%, 43%);}
+.color {background-color: hsl(71, 73%, 54%);}
+.color {background-color: hsl(204, 43%, 93%);}
+.color {background-color: hsl(218, 22%, 67%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(179, 62%, 33%)
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 375px;
+                height: 870px;
+                font-size: 16px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                gap: 1rem;
+                background-color: hsl(204, 43%, 93%);
+            }
+
+        /* CLASS */
+
+            .card,
+            .card-top,
+            .card-middle,
+            .card-middle div,
+            .card-bottom,
+            .card-bottom ul {
+                display: flex;
+            }
+
+            .card,
+            .card-top,
+            .card-middle,
+            .card-bottom,
+            .card-bottom ul {
+                flex-direction: column;
+            }
+
+            .card div {
+                /* height: 253px; */
+                padding: 1.8rem;
+                gap: 1rem;
+            }
+
+            .card-top {
+                border-radius: .4rem .4rem 0 0;
+                background-color: hsl(0, 100%, 100%);
+            }
+
+            .card-top h1 {
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: hsl(179, 62%, 43%);
+            }
+
+            .card-top p:nth-of-type(1) {
+                font-weight: 700;
+                color: hsl(71, 73%, 54%);
+            }
+
+            .card-top p:nth-of-type(2) {
+                line-height: 1.8rem;
+                color: hsl(218, 22%, 67%);
+            }
+
+            .card-middle {
+                background-color: hsl(179, 62%, 43%);
+                color: hsl(204, 43%, 93%)
+            }
+
+            .card-middle h2 {
+                font-size: 1.4rem;
+            }
+
+            .card-middle div {
+                padding: 0;
+                gap: .8rem;
+            }
+
+            .card-middle div p:nth-of-type(1) {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+            .card-middle div p:nth-of-type(2) {
+                align-self: center;
+                color: hsl(179, 62%, 63%);
+            }
+
+            .card-middle a {
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 700;
+                background-color: hsl(71, 73%, 54%);
+                color: hsl(204, 43%, 93%);
+                box-shadow: 0 .6rem .6rem .2rem hsl(179, 62%, 33%);
+                border-radius: .4rem;
+                padding: 1rem;
+            }
+
+            .card-bottom {
+                border-radius: 0 0 .4rem .4rem;
+                background-color: hsl(179, 62%, 53%);
+                color: hsl(204, 43%, 93%);
+            }
+
+            .card-bottom h2 {
+                font-size: 1.4rem;
+            }
+
+            .card-bottom ul {
+                gap: .2rem;
+            }
+
+            .card-bottom ul li {
+                list-style-type: none;
+                color: hsl(204, 43%, 93%);
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 800px;
+            }
+
+        /* CLASS */
+
+            .card {
+                margin: auto;
+                width: 58%;
+                display: grid;
+                grid-template-areas:
+                'card-top card-top'
+                'card-middle card-bottom';
+            }
+
+        /* ID */
+
+            #card-top {
+                grid-area: card-top;
+            }
+
+            #card-middle {
+                border-radius: 0 0 0 .4rem;
+                grid-area: card-middle;
+            }
+
+            #card-bottom {
+                border-radius: 0 0 .4rem 0;
+                grid-area: card-bottom;
+            }
+
+    }
