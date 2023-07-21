@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/* COLOURS */
+
+.color {background-color: hsl(223, 87%, 63%);}
+.color {background-color: hsl(354, 100%, 66%);}
+.color {background-color: hsl(223, 100%, 88%);}
+.color {background-color: hsl(0, 0%, 59%);}
+.color {background-color: hsl(209, 33%, 12%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Libre Franklin', sans-serif;
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                margin: auto;
+                width: 750px;
+                height: 1624px;
+                display: grid;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                font-size: 20px;
+                gap: 1rem;
+            }
+
+            main {
+                width: 500px;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            input {
+                border: .1rem solid hsl(223, 87%, 63%);
+                border-radius: 2rem;
+                padding: 1rem;
+            }
+
+        /* CLASS */
+
+            .form,
+            .launching,
+            .social {
+                display: flex;
+            }
+
+            .form,
+            .launching {
+                flex-direction: column;
+            }
+
+            .logo_img {
+                padding: 3rem;
+            }
+
+            .launching {
+                padding: 2rem;
+                gap: 2rem;
+            }
+
+            .launching span {
+                font-weight: 300;
+                color: hsl(0, 0%, 59%);
+            }
+
+
+            .launching h2 {
+                font-size: 1rem;
+                font-weight: 300;
+            }
+
+            .form {
+                height: 150px;
+                gap: 1rem;
+            }
+
+            .form input:nth-of-type(2) {
+                cursor: pointer;
+                background-color: hsl(223, 87%, 63%);
+                color: hsl(0, 100%, 100%);
+                font-weight: 600;
+            }
+
+            .form input:nth-of-type(2):hover {
+                background-color: hsl(223, 87%, 53%);
+            }
+
+            .dashboard_img img {
+                width: 100%;
+            }
+
+            .social {
+                justify-content: center;
+                padding: 6rem 0 2rem 0;
+                gap: 3rem;
+            }
+
+            .social a {
+                font-size: 2rem;
+                color: hsl(223, 87%, 63%);
+            }
+
+            .social a:hover {
+                color: hsl(223, 87%, 53%);
+            }
+
+            .copyright {
+                padding: 2rem;
+            }
+
+        /* ID */
+
+            #p-alert {
+                display: none;
+                color : hsl(354, 100%, 66%);
+                font-style : italic;
+                font-size : .8rem;
+            }
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+
+            body {
+                width: 1440px;
+                height: 1024px;
+            }
+
+        /* CLASS */
+
+            .form {
+                height: 85px;
+                display: grid;
+                grid-template-areas:
+                'input-email input-submit'
+                'p-alert p-alert';
+            }
+
+        /* ID */
+
+        #input-email {
+            height: 52px;
+            grid-area: input-email;
+        }
+
+        #p-alert {
+            grid-area: p-alert;
+            text-align: left;
+        }
+
+        #input-submit {
+            height: 52px;
+            grid-area: input-submit;
+        }
+
+    }
+
+    .attribution {
+        font-size: 11px;text-align: center;
+    }
+    .attribution a {
+        text-decoration: none;
+        color: hsl(223, 87%, 53%);
+    }
