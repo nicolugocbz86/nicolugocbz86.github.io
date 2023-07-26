@@ -31,7 +31,7 @@
                 text-align: center;
                 font-size: 16px;
                 background-color: hsl(0, 100%, 74%);
-                background-image: url(../images/bg-intro-mobile.png);
+                background-image: url(bg-intro-mobile.png);
             }
 
             main,
@@ -152,7 +152,7 @@
                 width: 1440px;
                 height: 800px;
                 background-color: hsl(0, 100%, 74%);
-                background-image: url(../images/bg-intro-desktop.png);
+                background-image: url(bg-intro-desktop.png);
             }
 
             main {
