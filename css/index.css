@@ -16,27 +16,63 @@
         /* TAGS */
 
             body {
-                width: 400px;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
-                text-align: center;
-                background-color: hsl(200, 100%, 50%);
             }
 
-            a {
-                text-decoration: none;
-            }
-
-            ul {
+            li {
                 list-style-type: none;
             }
 
         /* CLASS */
 
-        .challenges_container a {
-            text-decoration: none;
-            color: black;
-        }
+            .h2-button_container {
+                display: flex;
+            }
+
+            .h2-button_container {
+                justify-content: space-between;
+            }
+
+            .h2-button_container img {
+                width: 2rem;
+                transition: .2s;
+            }
+
+            .ul {
+                height: 0;
+                transition: .4s;
+            }
+
+            .a_tags {
+                display: none;
+            }
+
+            /* toggles */
+
+            .button_180deg {
+                rotate: 180deg;
+                transition: .2s;
+            }
+
+            .ul_expanded {
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                transition: .4s;
+            }
+
+            .a_tags_blocked {
+                display: block;
+                text-decoration: none;
+                color: hsl(0,0%,0%);
+            }
+
+            .a_tags_blocked:active {
+
+            }
 
         /* ID */
 
