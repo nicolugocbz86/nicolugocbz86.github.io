@@ -15,66 +15,63 @@
 
         /* TAGS */
 
-            body {
+            html {
+                margin: auto;
                 width: 100%;
-                display: flex;
-                flex-direction: column;
             }
 
-            li {
-                list-style-type: none;
+            body {
+                margin: auto;
+                width: 98%;
             }
 
         /* CLASS */
 
-            .h2-button_container {
-                display: flex;
+            .challenges-cards-container {
+                display: grid;
+                grid-template-areas:
+                'qr-code-component product-preview-card-component'
+                'nft-preview-card-component stats-preview-card-component';
+                grid-template-columns: repeat(2, 1fr);
+                padding: 1rem;
+                gap: 1rem;
             }
 
-            .h2-button_container {
-                justify-content: space-between;
-            }
-
-            .h2-button_container img {
-                width: 2rem;
-                transition: .2s;
-            }
-
-            .ul {
-                height: 0;
-                transition: .4s;
-            }
-
-            .a_tags {
-                display: none;
-            }
-
-            /* toggles */
-
-            .button_180deg {
-                rotate: 180deg;
-                transition: .2s;
-            }
-
-            .ul_expanded {
-                height: 600px;
+            .cards {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
-                transition: .4s;
+                text-align: center;
+                padding: .8rem;
+                gap: .8rem;
             }
 
-            .a_tags_blocked {
-                display: block;
-                text-decoration: none;
-                color: hsl(0,0%,0%);
+            .cards img {
+                margin: auto;
+                width: 100%;
             }
 
-            .a_tags_blocked:active {
-
+            .cards a {
+                text-shadow: none;
+                color: hsl(0, 0%, 0%);
             }
 
         /* ID */
+
+            #qr-code-component {
+                grid-area: qr-code-component;
+            }
+
+            #product-preview-card-component {
+                grid-area: product-preview-card-component;
+            }
+
+            #nft-preview-card-component {
+                grid-area: nft-preview-card-component;
+            }
+
+            #stats-preview-card-component {
+                grid-area: stats-preview-card-component;
+            }
 
     }
 
