@@ -18,59 +18,89 @@
             html {
                 margin: auto;
                 width: 100%;
+                height: 100%;
             }
 
             body {
                 margin: auto;
                 width: 98%;
+                height: 100%;
             }
 
         /* CLASS */
 
+            .cards,
+            .section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section {
+                padding: .6rem;
+                gap: .6rem;
+            }
+
             .challenges-cards-container {
                 display: grid;
+                grid-template-columns: 1fr, 1fr;
                 grid-template-areas:
-                'qr-code-component product-preview-card-component'
-                'nft-preview-card-component stats-preview-card-component';
-                grid-template-columns: repeat(2, 1fr);
-                padding: 1rem;
-                gap: 1rem;
+                'card-1 card-2'
+                'card-3 card-4'
+                'card-5 card-6'
+                'card-7 card-8';
+                padding: .4rem;
+                gap: .4rem;
             }
 
             .cards {
-                display: flex;
-                flex-direction: column;
+                margin: auto;
+                width: 100%;
+                height: 100%;
                 text-align: center;
-                padding: .8rem;
-                gap: .8rem;
+                justify-content: space-between;
+                padding: .2rem;
+                gap: .2rem;
             }
 
             .cards img {
-                margin: auto;
                 width: 100%;
+                align-self: center;
             }
 
             .cards a {
-                text-shadow: none;
+                text-decoration: none;
                 color: hsl(0, 0%, 0%);
+            }
+
+            .cards h3 {
+                font-size: 1.2rem;
             }
 
         /* ID */
 
-            #qr-code-component {
-                grid-area: qr-code-component;
+            #card-1 {
+                grid-area: card-1;
             }
-
-            #product-preview-card-component {
-                grid-area: product-preview-card-component;
+            #card-2 {
+                grid-area: card-2;
             }
-
-            #nft-preview-card-component {
-                grid-area: nft-preview-card-component;
+            #card-3 {
+                grid-area: card-3;
             }
-
-            #stats-preview-card-component {
-                grid-area: stats-preview-card-component;
+            #card-4 {
+                grid-area: card-4;
+            }
+            #card-5 {
+                grid-area: card-5;
+            }
+            #card-6 {
+                grid-area: card-6;
+            }
+            #card-7 {
+                grid-area: card-7;
+            }
+            #card-8 {
+                grid-area: card-8;
             }
 
     }
