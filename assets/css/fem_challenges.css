@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.color1 {color: hsl(200, 100%, 50%);}
+
 /* UNIVERSAL */
 
     * {
@@ -14,8 +16,59 @@
     @media screen and (min-width: 0px) {
 
         /* TAGS */
-
         /* CLASS */
+
+            .section-fem,
+            .challenges-cards-container,
+            .cards {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .section-fem h2,
+            .challenges-cards-container {
+                padding: .8rem;
+            }
+
+            .challenges-cards-container {
+                gap: .8rem;
+            }
+
+            .section-fem {
+                border: .1rem solid hsl(0, 0%, 0%);
+            }
+
+            .section-fem h2 {
+                background-color: hsl(200, 100%, 50%);
+            }
+
+            .cards {
+                justify-content: space-between;
+                height: 340px;
+                text-align: center;
+                border: .1rem solid hsl(0, 0%, 0%);
+            }
+
+            .cards a {
+                text-decoration: none;
+                color: hsl(0, 0%, 0%);
+            }
+
+            .cards a:active {
+                text-decoration: underline;
+            }
+
+            .cards a:nth-of-type(2) {
+                padding: .6rem;
+            }
+
+            .cards img {
+                width: 100%;
+            }
+
+            .cards h3 {
+                font-size: 1.4rem;
+            }
 
         /* ID */
 

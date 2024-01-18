@@ -21,8 +21,14 @@
         /* TAGS */
 
             body {
+                margin: auto;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
+            }
+
+            li {
+                list-style-type: none;
             }
 
         /* CLASS */
@@ -34,52 +40,23 @@
                 padding: 1rem;
             }
 
-            .nav li,
-            .footer li {
-                list-style: none;
+            .nav a,
+            .footer ul {
+                text-align: center;
+            }
+
+            .nav a,
+            .footer a {
+                text-decoration: none;
+                color: hsl(0, 0%, 0%);
             }
 
             .header {
                 background-color: hsl(210, 10%, 80%);
             }
 
-            .section-1 {
-                display: flex;
-                flex-direction: column;
-                padding: .8rem;
-                gap: .8rem;
-            }
-
-            .section-1 h2 {
-                background-color: hsl(210, 70%, 80%);
-            }
-
-            .section-1 a {
-                background-color: hsl(150, 70%, 80%);
-                border: .1rem solid hsl(0, 0%, 0%);
-                text-decoration: none;
-                text-align: center;
-                color: hsl(0, 0%, 0%);
-            }
-
-            .section-1 h2,
-            .section-1 a {
-                padding: .8rem;
-            }
-
             .footer {
                 background-color: hsl(210, 10%, 80%);
-            }
-
-            .footer ul {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .footer a {
-                text-decoration: none;
-                color: hsl(0, 0%, 0%);
             }
 
         /* ID */
