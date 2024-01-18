@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.color1 {color: hsl(210, 70%, 80%);}
+.color2 {color: hsl(150, 70%, 80%);}
+.color3 {color: hsl(60, 70%, 80%);}
+.color4 {color: hsl(210, 10%, 80%);}
+
+/* UNIVERSAL */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+/* MEDIA QUERIES */
+
+    @media screen and (min-width: 0px) {
+
+        /* TAGS */
+
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+        /* CLASS */
+
+            .header,
+            .nav,
+            .main,
+            .footer {
+                padding: 1rem;
+            }
+
+            .nav li,
+            .footer li {
+                list-style: none;
+            }
+
+            .header {
+                background-color: hsl(210, 10%, 80%);
+            }
+
+            .section-1 {
+                display: flex;
+                flex-direction: column;
+                padding: .8rem;
+                gap: .8rem;
+            }
+
+            .section-1 h2 {
+                background-color: hsl(210, 70%, 80%);
+            }
+
+            .section-1 a {
+                background-color: hsl(150, 70%, 80%);
+                border: .1rem solid hsl(0, 0%, 0%);
+                text-decoration: none;
+                text-align: center;
+                color: hsl(0, 0%, 0%);
+            }
+
+            .section-1 h2,
+            .section-1 a {
+                padding: .8rem;
+            }
+
+            .footer {
+                background-color: hsl(210, 10%, 80%);
+            }
+
+            .footer ul {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer a {
+                text-decoration: none;
+                color: hsl(0, 0%, 0%);
+            }
+
+        /* ID */
+
+    }
+
+    @media screen and (min-width: 401px) {
+
+        /* TAGS */
+        /* CLASS */
+        /* ID */
+
+    }
