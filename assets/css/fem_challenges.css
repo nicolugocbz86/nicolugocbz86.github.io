@@ -74,10 +74,79 @@
 
     }
 
-    @media screen and (min-width: 401px) {
+    @media screen and (min-width: 401px) and (orientation: landscape) {
 
         /* TAGS */
         /* CLASS */
+
+            .challenges-cards-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-start: repeat(7, 1fr) auto;
+                grid-template-areas:
+                'card-1 card-2'
+                'card-3 card-4'
+                'card-5 card-6'
+                'card-7 card-8'
+                'card-9 card-10'
+                'card-11 card-12'
+                'card-13 card-14'
+                'card-15 card-15';
+            }
+
+            .cards {
+                margin: auto;
+                width: 260px;
+                height: 290px;
+            }
+
         /* ID */
+
+            #card-1 {
+                grid-area: card-1;
+            }
+            #card-2 {
+                grid-area: card-2;
+            }
+            #card-3 {
+                grid-area: card-3;
+            }
+            #card-4 {
+                grid-area: card-4;
+            }
+            #card-5 {
+                grid-area: card-5;
+            }
+            #card-6 {
+                grid-area: card-6;
+            }
+            #card-7 {
+                grid-area: card-7;
+            }
+            #card-8 {
+                grid-area: card-8;
+            }
+            #card-9 {
+                grid-area: card-9;
+            }
+            #card-10 {
+                grid-area: card-10;
+            }
+            #card-11 {
+                grid-area: card-11;
+            }
+            #card-12 {
+                grid-area: card-12;
+            }
+            #card-13 {
+                grid-area: card-13;
+            }
+            #card-14 {
+                grid-area: card-14;
+            }
+            #card-15 {
+                width: 260px;
+                grid-area: card-15;
+            }
 
     }
